@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Companies from "./components/Companies";
+import Residencies from "./components/Residencies";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Header />
       </div>
       <Companies />
+      <Residencies />
     </div>
   );
 }
