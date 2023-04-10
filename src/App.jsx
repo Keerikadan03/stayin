@@ -1,7 +1,10 @@
+import Header from "./components/Header";
 
 function App() {
   return (
-    <span>Fuck Soceity</span>
+    <div className="App">
+      <Header />
+    </div>
   );
 }
 
