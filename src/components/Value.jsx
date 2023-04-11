@@ -7,7 +7,7 @@ import {
     AccordionItemPanel,
     AccordionItemState
 } from 'react-accessible-accordion' 
-import {MdOutlineArrowDropdown} from 'react-icons/md'
+import {MdOutlineArrowDropDown} from 'react-icons/md'
 import '../styles/Value.css'
 
 const Value = () => {
@@ -25,7 +25,7 @@ const Value = () => {
                 <span className='orangeText'>Our Value</span>
                 <span className='primaryText'>Value We Give To You</span>
                 <span className='secondaryText'>We always ready to help by providing the best services for you.<br/>
-                We beleive a good blace to live can make your life better
+                We beleive a good place to live can make your life better
                 </span>
             </div>
         </div>
