@@ -1,4 +1,4 @@
-import React from 'react' ; 
+import React, { useState } from 'react' ; 
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react' ; 
 import "swiper/css" ;
 import '../styles/Residencies.css' ;
@@ -6,6 +6,20 @@ import data from '../utils/slider.json' ;
 import {sliderSettings} from '../utils/common' ;
 
 const Residencies = () => {
+
+    // const [page, setPage] = useState(1)
+    // const [blogData, setBlogData] = useState(data)
+    // const pageData = blogData.slice(4*page - 4, 4*page)
+
+    // function leftPage(){
+    //     if(page != 1)
+    //         setPage(prevPage => prevPage -1)
+    // }
+
+    // function rightPage(){
+    //     if(page != )
+    // }
+
   return (
     <div>
         <section className="r-wrapper">
