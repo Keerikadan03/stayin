@@ -5,10 +5,11 @@ import {
     AccordionItemHeading,
     AccordionItemButton,
     AccordionItemPanel,
-    AccordionItemState
+    AccordionItemState,
 } from 'react-accessible-accordion' 
 import {MdOutlineArrowDropDown} from 'react-icons/md'
 import '../styles/Value.css'
+import data from '../utils/accordion'
 
 const Value = () => {
   return (
@@ -24,9 +25,34 @@ const Value = () => {
             <div className="flexColStart v-right">
                 <span className='orangeText'>Our Value</span>
                 <span className='primaryText'>Value We Give To You</span>
-                <span className='secondaryText'>We always ready to help by providing the best services for you.<br/>
+                <span className='secondaryText'>We always ready to help by providing the    best services for you.<br/>
                 We beleive a good place to live can make your life better
                 </span>
+
+                <Accordion className="accordion"
+                allowMultipleExpanded={false}
+                preExpanded= {[0]}
+                >
+                    {
+                        data.map((item,i)=>{
+                            return (
+                                <AccordionItem className="accordionItem" key={i} uuid={i}>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <div className="flexCenter icon">{item.icon}</div>
+                                            <span className="primaryText">
+                                                {item.heading}
+                                            </span>
+                                            <div className="flexCenter icon">
+                                                <MdOutlineArrowDropDown size={20} />
+                                            </div>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                </AccordionItem>
+                            );
+                        })}
+                </Accordion>   
+
             </div>
         </div>
     </section>
