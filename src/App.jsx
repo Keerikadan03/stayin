@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <div className="white-gradient"/>
-        <Header />
-        <Hero />
+      <div className="white-gradient"/>
+        <Header style={{zIndex: '3'}}/>
+        <Hero style={{zIndex: '-1'}}/>
       </div>
       <Companies />
       <Residencies />
