@@ -41,4 +41,8 @@
 }
 .accordionButton .primaryText{
     font-size: 1.1rem;
+    padding: 0 1rem;
+}
+.accordionItemPanel .secondaryText{
+    margin-left: 12px;
 }
