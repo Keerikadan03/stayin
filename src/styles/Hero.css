@@ -2,9 +2,10 @@
     color: white;
     position: relative;
     padding-bottom: 2rem;
+    z-index: 1;
 }
 .hero-container{
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
 }
 /* left side */
@@ -60,6 +61,7 @@
 @media(max-width:640px){
     .hero-container{
         margin-top: 2rem;
+        z-index: -1;
     }
 
     .hero-title>h1{
@@ -88,4 +90,5 @@
     .stats>:nth-child(2){
         font-size:  0.8rem;
     }
+
 }
