@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import './styles/App.css'
 import Contacts from "./components/Contacts";
 import Value from "./components/Value";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Residencies />
       <Value />
       <Contacts />
+      <Footer />
     </div>
   );
 }
