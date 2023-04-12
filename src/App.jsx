@@ -20,9 +20,9 @@ function App() {
       <Companies />
       <Residencies />
       <Value />
-      {/* <Contacts />
+      <Contacts />
       <GetStarted />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
